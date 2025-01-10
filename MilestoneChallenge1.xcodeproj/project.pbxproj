@@ -58,6 +58,11 @@
 			path = MilestoneChallenge1UITests;
 			sourceTree = "<group>";
 		};
+		40BD12F12D3180CE00AC4F7D /* Content */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Content;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +96,7 @@
 				40BD129D2D317D3800AC4F7D /* MilestoneChallenge1 */,
 				40BD12B72D317D3F00AC4F7D /* MilestoneChallenge1Tests */,
 				40BD12C12D317D3F00AC4F7D /* MilestoneChallenge1UITests */,
+				40BD12F12D3180CE00AC4F7D /* Content */,
 				40BD129C2D317D3800AC4F7D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,6 +128,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				40BD129D2D317D3800AC4F7D /* MilestoneChallenge1 */,
+				40BD12F12D3180CE00AC4F7D /* Content */,
 			);
 			name = MilestoneChallenge1;
 			packageProductDependencies = (
