@@ -13,7 +13,6 @@ class TableVC: UITableViewController
 
     override func viewDidLoad()
     {
-        print("vdl reached")
         super.viewDidLoad()
         setUpNavigation()
         loadBundle()
@@ -43,23 +42,21 @@ class TableVC: UITableViewController
 extension TableVC
 {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("numofRowsreached")
         return pictures.count
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("cellforrow at reached")
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FlagCell", for: indexPath)
-        cell.textLabel?.text = pictures[indexPath.row]
+        let cell    = tableView.dequeueReusableCell(withIdentifier: "FlagCell", for: indexPath)
+        let picture = pictures[indexPath.row]
+        cell.textLabel?.text = picture
         return cell
     }
     
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "DetailVC") as? DetailVC {
-            print("workin")
-            vc.selectedImage = pictures[indexPath.row]
+            vc.selectedImageString = pictures[indexPath.row]
             navigationController?.pushViewController(vc, animated: true)
         }
     }

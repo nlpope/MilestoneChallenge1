@@ -42,7 +42,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggi-1T-d6E">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggi-1T-d6E">
                                             <rect key="frame" x="20" y="0.0" width="341" height="44"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -85,6 +85,9 @@
                             <constraint firstItem="kIr-fx-ad5" firstAttribute="centerX" secondItem="gml-WB-zoJ" secondAttribute="centerX" id="xxI-YY-3NN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="kIr-fx-ad5" id="i9I-jz-JT2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iWL-zQ-yRO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
